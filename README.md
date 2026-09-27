@@ -41,13 +41,15 @@ The database uses relationships between these entities to maintain consistency a
 
 ## Technology Stack
 
-|-------------------------|-----------------------------------------------|
-| * **Backend:**          | Python, Django                                |
-| * **API:**              | Django REST Framework                         |
-| * **Database:**         | PostgreSQL                                    |
-| * **Application Type:** |Web-based business management system           |
-| * **API Architecture:** | REST API                                      |
-| * **FrontEnd:**         | Nextjs                                        |
+| Category                    | Technology                  |
+| --------------------------- | --------------------------- |
+| **Programming Language**    | Python                      |
+| **Backend Framework**       | Django                      |
+| **API Framework**           | Django REST Framework (DRF) |
+| **Database**                | PostgreSQL                  |
+| **API Architecture**        | REST API                    |
+| **Database Management**     | Django ORM + PostgreSQL     |
+| **Development Environment** | Visual Studio Code          |
 
 ## Project's normalization schema
 
