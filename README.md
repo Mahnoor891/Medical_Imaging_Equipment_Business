@@ -40,7 +40,8 @@ The system allows hospitals/clients to **register, manage their profiles, view a
 The database uses relationships between these entities to maintain consistency and represent the complete order lifecycle.
 
 ## Technology Stack
-|-------------------------------------------------------------------------|
+
+|-------------------------|-----------------------------------------------|
 | * **Backend:**          | Python, Django                                |
 | * **API:**              | Django REST Framework                         |
 | * **Database:**         | PostgreSQL                                    |
@@ -53,13 +54,16 @@ The database uses relationships between these entities to maintain consistency a
 Database model: Relational schema
 Normalization level: 3NF (Third Normal Form)
 
-| **Main tables can be represented as:**                                      | |-----------------------------------------------------------------------------| | User      | (user_id, username, email, password, ...)                       |                    
-| Hospital  | (hospital_id, user_id, hospital_name, address, ...)             |
-| Equipment | (equipment_id, name, description, price, quantity, ...)         |
-| Order     | (order_id, hospital_id, order_date, status, total_amount, ...)  |
-| OrderItem | (order_item_id, order_id, equipment_id, quantity, unit_price,.) |
-| Invoice   | (invoice_id, order_id, invoice_date, amount, ...)               |
-| Shipment  | (shipment_id, order_id, shipment_date, status, ...)             |
+| Table         | Main Attributes                                                            |
+| ------------- | -------------------------------------------------------------------------- |
+| **User**      | `user_id`, `username`, `email`, `password`, ...                            |
+| **Hospital**  | `hospital_id`, `user_id`, `hospital_name`, `address`, ...                  |
+| **Equipment** | `equipment_id`, `name`, `description`, `price`, `quantity`, ...            |
+| **Order**     | `order_id`, `hospital_id`, `order_date`, `status`, `total_amount`, ...     |
+| **OrderItem** | `order_item_id`, `order_id`, `equipment_id`, `quantity`, `unit_price`, ... |
+| **Invoice**   | `invoice_id`, `order_id`, `invoice_date`, `amount`, ...                    |
+| **Shipment**  | `shipment_id`, `order_id`, `shipment_date`, `status`, ...                  |
+
 
 ## API Reference
 
