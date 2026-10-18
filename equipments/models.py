@@ -20,6 +20,7 @@ class Equipment(models.Model):
 
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)
 
+    image = models.ImageField(upload_to='equipment/', blank=True, null=True)
     name = models.CharField(max_length=200)
     description = models.TextField()
     manufacturer = models.CharField(max_length=150, blank=True, default='')
