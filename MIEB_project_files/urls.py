@@ -25,4 +25,5 @@ urlpatterns = [
     path('api/', include('Order_OrderItem.urls')),
     path('api/', include('Invoice.urls')),
     path('api/',include('Shipment.urls')),
+    path('api-auth/', include('rest_framework.urls')),
 ]

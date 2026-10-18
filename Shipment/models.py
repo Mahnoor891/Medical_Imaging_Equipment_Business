@@ -19,6 +19,8 @@ class Shipment(models.Model):
 
     shipment_date = models.DateTimeField(auto_now_add=True)
 
+    expected_delivery_date = models.DateField(null=True, blank=True)
+
     shipping_address = models.TextField()
 
     tracking_number = models.CharField(

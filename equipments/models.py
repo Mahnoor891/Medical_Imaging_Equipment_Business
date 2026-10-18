@@ -14,6 +14,7 @@ class Equipment(models.Model):
         ('Refurbished', 'Refurbished'),
         ('Pre-Owned', 'Pre-Owned'),
         ('Remanufactured Unit', 'Remanufactured Unit'),
+        ('Locally Manufactured', 'Locally Manufactured')
         
     ]
 
